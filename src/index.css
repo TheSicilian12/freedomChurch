@@ -67,13 +67,18 @@ code {
 }
 
 .navbar-location-container {
-  padding: 20px;
+  position: relative;
+  /* padding: 20px; */
+  /* display: flex; */
 }
 
 .navbar-locations-container {
-  /* position: absolute; */
-  /* top: 90px; */
-  width: 100%;
+  position: absolute;
+  width: 100%; /* Take up full width of parent */
+  background-color: rgba(0, 0, 0, 0.507);
+  top: 100%; /* Position it below the parent */
+  left: 0; /* Align it with the left edge of the parent */
+
 }
 
 .navbar-hamburger-container {

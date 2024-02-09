@@ -25,13 +25,13 @@ export function NavBar() {
 
                 <div class="navbar-right">
 
-                    <div class="navbar-location-container medium-font border"
+                    <div class="navbar-location-container medium-font"
                         onMouseEnter={locationHover}
                         onMouseLeave={locationLeaveHover}
                         >
                             Choose Your Location
 
-                        <div class={`${display} navbar-locations-container border`}>
+                        <div class={`${display} navbar-locations-container`}>
                             <div class="navbar-location-options">Location 1</div>
                             <div class="navbar-location-options">Location 2</div>
                         </div>
