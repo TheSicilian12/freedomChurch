@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  z-index: 99999999;
+  position: fixed;
+
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.21);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.71) 0%, rgba(231, 56, 39, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.21)), color-stop(100%, rgba(231, 56, 39, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.71) 0%, rgba(231, 56, 39, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.10) 0%, rgba(231, 56, 39, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.71) 0%, rgba(231, 56, 39, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.51) 0%, rgba(231, 56, 39, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#e73827', GradientType=0);
+}

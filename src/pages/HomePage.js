@@ -1,15 +1,10 @@
-// import React from 'react';
+import { NavBar } from '../components/NavBar';
 
-// export function HomePage() {
-//     return (
-//         <>
-//             <div>Home page</div>
-//         </>
-//     )
-// }
-
-export const HomePage = () => {
+export function HomePage() {
     return (
-        <h1>Home page</h1>
+        <>
+            <NavBar />
+            <div>Home page</div>
+        </>
     )
 }
