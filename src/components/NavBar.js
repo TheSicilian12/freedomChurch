@@ -28,8 +28,7 @@ export function NavBar() {
                     <div class="navbar-location-container medium-font"
                         onMouseEnter={locationHover}
                         onMouseLeave={locationLeaveHover}
-                        >
-                            Choose Your Location
+                        >Choose Your Location
 
                         <div class={`${display} navbar-locations-container`}>
                             <div class="navbar-location-options">Location 1</div>

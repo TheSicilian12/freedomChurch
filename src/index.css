@@ -74,11 +74,15 @@ code {
 
 .navbar-locations-container {
   position: absolute;
-  width: 100%; /* Take up full width of parent */
-  background-color: rgba(0, 0, 0, 0.507);
-  top: 100%; /* Position it below the parent */
-  left: 0; /* Align it with the left edge of the parent */
+  background-color: rgba(0, 0, 0, 0.301);
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
 
+.navbar-location-options:hover {
+  color: var(--mainColor);
+  background-color:  rgba(0, 0, 0, 0.521)
 }
 
 .navbar-hamburger-container {
