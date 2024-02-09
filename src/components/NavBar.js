@@ -12,13 +12,13 @@ export function NavBar() {
         display === 'display-none' ? setDisplay('display') : setDisplay('display-none');
     }
 
-    const locationLeaveHover = (event) => {
+    const locationLeaveHover = () => {
        setDisplay('display-none');
     }
 
-    // const locationSelector = () => {
-    //    console.log(this)
-    // }
+    const locationSelector = (e) => {
+       setLocation(e.target.textContent)
+    }
 
     return (
         <>
@@ -38,8 +38,9 @@ export function NavBar() {
 
                         <div className={`${display} navbar-locations-container`}>
                             <div className="navbar-location-options"
-                                >Location 1</div>
-                            <div className="navbar-location-options">Location 2</div>
+                                onClick={locationSelector}>Location 1</div>
+                            <div className="navbar-location-options"
+                                onClick={locationSelector}>Location 2</div>
                         </div>
                     </div>
 
