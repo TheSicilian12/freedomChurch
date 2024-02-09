@@ -1,7 +1,11 @@
+import { useState } from 'react';
+
 import churchLogo from '../images/ChurchLogo.svg'
 import hamburgerMenu from '../images/icons/hamburger-menu.svg'
 
 export function NavBar() {
+    const [display, setDisplay] = useState('display-none')
+
     return (
         <>
             <div class="navbar-container">
@@ -14,11 +18,11 @@ export function NavBar() {
                 <div class="navbar-right border">
 
                     <div class="navbar-location-container medium-font border">Choose Your Location</div>
-                    <div class="navbar-locations-container display-none">
+                    <div class={`${display} navbar-locations-container`}>
                         <div class="navbar-location-options medium-font">Lima, Ohio</div>
                         <div class="navbar-location-options">Ottawa, Ohio</div>
                     </div>
-                    
+
                     <div class="navbar-hamburger-container">
                         <div class="navbar-hamburger-line"></div>
                         <div class="navbar-hamburger-line"></div>
