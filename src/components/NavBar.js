@@ -18,6 +18,7 @@ export function NavBar() {
 
     const locationSelector = (e) => {
        setLocation(e.target.textContent)
+       locationLeaveHover();
     }
 
     return (
