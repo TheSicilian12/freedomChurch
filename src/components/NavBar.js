@@ -12,10 +12,14 @@ export function NavBar() {
                 </div>
 
                 <div class="navbar-right border">
-                    <div class="navbar-location-container border large-font">Freedom Church - Lima
+                    <div class="navbar-location-container border">Freedom Church - Lima
                         <div class="navbar-location-options"></div>
                     </div>
-                    <div><i class="fa fa-bars"></i></div>
+                    <div class="navbar-hamburger-container">
+                        <div class="navbar-hamburger-line"></div>
+                        <div class="navbar-hamburger-line"></div>
+                        <div class="navbar-hamburger-line"></div>
+                    </div>
                 </div>
             </div>
         </>

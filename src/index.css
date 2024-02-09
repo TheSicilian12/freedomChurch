@@ -66,10 +66,19 @@ code {
 }
 
 .navbar-location-container {
-  height: 15px;
+  /* height: 15px; */
   padding: 20px;
 }
 
-.navbar-hamburger {
-  height: 2vh;
+.navbar-hamburger-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+
+  width: 20px;
+  height: 25px;
+}
+.navbar-hamburger-line {
+  border-bottom: 3px solid black;
 }
