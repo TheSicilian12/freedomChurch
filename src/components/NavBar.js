@@ -39,9 +39,9 @@ export function NavBar() {
 
                         <div className={`${display} navbar-locations-container`}>
                             <div className="navbar-location-options"
-                                onClick={locationSelector}>Location 1</div>
+                                onClick={locationSelector}>Church Name - Location 1</div>
                             <div className="navbar-location-options"
-                                onClick={locationSelector}>Location 2</div>
+                                onClick={locationSelector}>Church Name - Location 2</div>
                         </div>
                     </div>
 
