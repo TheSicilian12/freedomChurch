@@ -5,6 +5,8 @@ import hamburgerMenu from '../images/icons/hamburger-menu.svg'
 
 export function NavBar() {
     const [display, setDisplay] = useState('display-none')
+    const [location, setLocation] = useState('Choose Your Location')
+
 
     const locationHover = () => {
         display === 'display-none' ? setDisplay('display') : setDisplay('display-none');
@@ -14,32 +16,37 @@ export function NavBar() {
        setDisplay('display-none');
     }
 
+    // const locationSelector = () => {
+    //    console.log(this)
+    // }
+
     return (
         <>
-            <div class="navbar-container">
-                <div class="navbar-left">
-                    <div class="homepage-navbar-left">
-                        <img src={churchLogo} class="navbar-logo" />
+            <div className="navbar-container">
+                <div className="navbar-left">
+                    <div className="homepage-navbar-left">
+                        <img src={churchLogo} className="navbar-logo" />
                     </div>
                 </div>
 
-                <div class="navbar-right">
+                <div className="navbar-right">
 
-                    <div class="navbar-location-container medium-font"
+                    <div className="navbar-location-container medium-font"
                         onMouseEnter={locationHover}
                         onMouseLeave={locationLeaveHover}
-                        >Choose Your Location
+                        >{location}
 
-                        <div class={`${display} navbar-locations-container`}>
-                            <div class="navbar-location-options">Location 1</div>
-                            <div class="navbar-location-options">Location 2</div>
+                        <div className={`${display} navbar-locations-container`}>
+                            <div className="navbar-location-options"
+                                >Location 1</div>
+                            <div className="navbar-location-options">Location 2</div>
                         </div>
                     </div>
 
-                    <div class="navbar-hamburger-container">
-                        <div class="navbar-hamburger-line"></div>
-                        <div class="navbar-hamburger-line"></div>
-                        <div class="navbar-hamburger-line"></div>
+                    <div className="navbar-hamburger-container">
+                        <div className="navbar-hamburger-line"></div>
+                        <div className="navbar-hamburger-line"></div>
+                        <div className="navbar-hamburger-line"></div>
                     </div>
                 </div>
             </div>
