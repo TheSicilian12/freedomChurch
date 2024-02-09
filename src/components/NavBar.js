@@ -4,7 +4,7 @@ import hamburgerMenu from '../images/icons/hamburger-menu.svg'
 export function NavBar() {
     return (
         <>
-            <div class="navbar-container border">
+            <div class="navbar-container">
                 <div class="navbar-left">
                     <div class="homepage-navbar-left">
                         <img src={churchLogo} class="navbar-logo"/>
@@ -12,9 +12,13 @@ export function NavBar() {
                 </div>
 
                 <div class="navbar-right border">
-                    <div class="navbar-location-container border">Freedom Church - Lima
-                        <div class="navbar-location-options"></div>
+
+                    <div class="navbar-location-container medium-font border">Choose Your Location</div>
+                    <div class="navbar-locations-container display-none">
+                        <div class="navbar-location-options medium-font">Lima, Ohio</div>
+                        <div class="navbar-location-options">Ottawa, Ohio</div>
                     </div>
+                    
                     <div class="navbar-hamburger-container">
                         <div class="navbar-hamburger-line"></div>
                         <div class="navbar-hamburger-line"></div>
