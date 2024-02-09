@@ -1,10 +1,12 @@
 import { NavBar } from '../components/NavBar';
+import { ContanctUs } from '../components/ContanctUs';
 
 export function HomePage() {
     return (
         <>
-            <NavBar />
-            <div>Home page</div>
+            <div className="homepage-navbar"><NavBar /></div>
+            <div className="margin-large">Home page</div>
+            <ContanctUs />
         </>
     )
 }

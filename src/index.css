@@ -98,3 +98,15 @@ code {
 .navbar-hamburger-line {
   border-bottom: 3px solid black;
 }
+
+
+
+
+.homepage-navbar {
+  position: absolute;
+  top: 0px;
+}
+
+.margin-large {
+  margin-top: 500px;
+}
