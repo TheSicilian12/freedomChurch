@@ -10,22 +10,31 @@ export function NavBar() {
         display === 'display-none' ? setDisplay('display') : setDisplay('display-none');
     }
 
+    const locationLeaveHover = (event) => {
+       setDisplay('display-none');
+    }
 
     return (
         <>
             <div class="navbar-container">
                 <div class="navbar-left">
                     <div class="homepage-navbar-left">
-                        <img src={churchLogo} class="navbar-logo"/>
+                        <img src={churchLogo} class="navbar-logo" />
                     </div>
                 </div>
 
-                <div class="navbar-right border">
+                <div class="navbar-right">
 
-                    <div class="navbar-location-container medium-font border" onMouseOver={locationHover} onMouseLeave={locationHover}>Choose Your Location</div>
-                    <div class={`${display} navbar-locations-container`}>
-                        <div class="navbar-location-options medium-font">Lima, Ohio</div>
-                        <div class="navbar-location-options">Ottawa, Ohio</div>
+                    <div class="navbar-location-container medium-font border"
+                        onMouseEnter={locationHover}
+                        onMouseLeave={locationLeaveHover}
+                        >
+                            Choose Your Location
+
+                        <div class={`${display} navbar-locations-container border`}>
+                            <div class="navbar-location-options">Location 1</div>
+                            <div class="navbar-location-options">Location 2</div>
+                        </div>
                     </div>
 
                     <div class="navbar-hamburger-container">
