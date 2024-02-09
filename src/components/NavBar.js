@@ -7,18 +7,15 @@ export function NavBar() {
             <div class="navbar-container border">
                 <div class="navbar-left">
                     <div class="homepage-navbar-left">
-                        <img src={churchLogo} />
+                        <img src={churchLogo} class="navbar-logo"/>
                     </div>
                 </div>
 
                 <div class="navbar-right border">
-                    <div class="navbar-location-container">Location
+                    <div class="navbar-location-container border large-font">Freedom Church - Lima
                         <div class="navbar-location-options"></div>
-
                     </div>
-                    {/* <img src={hamburgerMenu} class="navbar-hamburger border"/> */}
-                    <i class="fa fa-bars"></i>
-                    Hello
+                    <div><i class="fa fa-bars"></i></div>
                 </div>
             </div>
         </>
