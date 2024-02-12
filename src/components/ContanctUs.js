@@ -40,7 +40,7 @@ export function ContanctUs() {
 
                 <label>Phone Number</label>
                 <input
-                    className="contact-input"
+                    className="contact-input-small"
                     onChange={(e) => {
                         setPhone(e.target.value)
                     }}></input>
