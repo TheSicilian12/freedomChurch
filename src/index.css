@@ -2,7 +2,7 @@
   --mainColor: #1abc9c;
   --secondColor: gray;
   --smallFont: 18px;
-  --mediumFont: 25px;
+  --mediumFont: 20px;
 }
 
 body {
@@ -160,6 +160,10 @@ code {
   padding: 9px;
 }
 
+.input-label {
+  font-size: var(--mediumFont);
+  font-weight: bold;
+}
 /* -------------above-------------- Contact Us --------------above-------------------- */
 
 
@@ -170,10 +174,6 @@ code {
 
 
 
-.input-label {
-  font-size: var(--smallFont);
-  font-weight: bold;
-}
 
 
 
