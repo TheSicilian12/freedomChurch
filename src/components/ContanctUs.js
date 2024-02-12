@@ -11,7 +11,7 @@ export function ContanctUs() {
 
     return (
         <>
-            <div className="contact-container border">
+            <div className="contact-container">
                 <div>Name</div>
                 <div className="contact-name-fields">
                     <input
@@ -47,6 +47,7 @@ export function ContanctUs() {
 
                 <label>Question or message</label>
                 <textarea
+                    type="text"
                     className="contact-input-large"
                     onChange={(e) => {
                         setMessage(e.target.value)
