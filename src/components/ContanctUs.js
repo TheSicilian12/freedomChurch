@@ -18,7 +18,7 @@ export function ContanctUs() {
                 <div>Name</div>
                 <div className="contact-name-fields">
                     <input
-                        className="contact-input-small"
+                        className="contact-input-small contact-input"
                         type="text"
                         // value={firstName}
                         // placeholder={firstName}
@@ -27,7 +27,7 @@ export function ContanctUs() {
                         }}></input>
 
                     <input
-                        className="contact-input-small"
+                        className="contact-input-small contact-input"
                         // value={lastName}
                         onChange={(e) => {
                             setLastName(e.target.value)
@@ -36,14 +36,14 @@ export function ContanctUs() {
 
                 <label>Email</label>
                 <input
-                    className="contact-input-small"
+                    className="contact-input-small contact-input"
                     onChange={(e) => {
                         setEmail(e.target.value)
                     }}></input>
 
                 <label>Phone Number</label>
                 <input
-                    className="contact-input-small"
+                    className="contact-input-small contact-input"
                     onChange={(e) => {
                         setPhone(e.target.value)
                     }}></input>
@@ -51,13 +51,13 @@ export function ContanctUs() {
                 <label>Question or message</label>
                 <textarea
                     type="text"
-                    className="contact-input-large"
+                    className="contact-input-large contact-input"
                     onChange={(e) => {
                         setMessage(e.target.value)
                     }}></textarea>
 
                 <button
-                    className="submit-button"
+                    className="submit-button contact-input"
                     onClick={() => sendMessage}>
                     Submit
                 </button>
