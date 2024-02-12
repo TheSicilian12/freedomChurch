@@ -6,7 +6,10 @@ export function HomePage() {
         <>
             <NavBar />
             <div className="margin-large">Home page</div>
-            <ContanctUs />
+
+            <div>
+                <ContanctUs />
+            </div>
         </>
     )
 }

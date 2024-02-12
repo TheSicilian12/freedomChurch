@@ -28,15 +28,12 @@ code {
   border: 1px solid black;
 }
 
-/* .medium-font {font-size: 25px;}
-.small-font {font-size: 18px;} */
-
 .submit-button {
   width: 25%;
   height: 40px;
   font-size: var(--smallFont);
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 10px;
 }
 
@@ -139,7 +136,7 @@ code {
 
   font-size: var(--smallFont);
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .contact-input-large {
@@ -148,7 +145,7 @@ code {
   padding: 10px;
 
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: var(--smallFont);
 }
 
@@ -171,14 +168,16 @@ code {
 
 
 
-
-
-
-
-
-
-
+/* -------------below-------------- Home Page --------------below-------------------- */
 .homepage-navbar {
   position: absolute;
   top: 0px;
 }
+
+
+
+
+
+
+
+/* -------------above--------------  Home Page --------------above-------------------- */
