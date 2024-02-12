@@ -11,24 +11,24 @@ export function ContanctUs() {
 
     return (
         <>
-            <div className="contact-container">
-            <div>
-                <label>First</label>
-                <input
-                    type="text"
-                    value={firstName}
-                    // placeholder={firstName}
-                    onChange={(e) => {
-                        setFirstName(e.target.value)
-                    }}></input>
+            <div className="contact-container border">
+                <div>
+                    <label>First</label>
+                    <input
+                        type="text"
+                        value={firstName}
+                        // placeholder={firstName}
+                        onChange={(e) => {
+                            setFirstName(e.target.value)
+                        }}></input>
 
-                <label>Last</label>
-                <input
-                    value={lastName}
-                    onChange={(e) => {
-                        setLastName(e.target.value)
-                    }}></input>
-            </div>
+                    <label>Last</label>
+                    <input
+                        value={lastName}
+                        onChange={(e) => {
+                            setLastName(e.target.value)
+                        }}></input>
+                </div>
                 <label>Email</label>
                 <input
                     onChange={(e) => {
@@ -42,10 +42,10 @@ export function ContanctUs() {
                     }}></input>
 
                 <label>Question or message</label>
-                <input
+                <textarea
                     onChange={(e) => {
                         setMessage(e.target.value)
-                    }}></input>
+                    }}></textarea>
 
 
             </div>
