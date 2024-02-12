@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import churchLogo from '../images/ChurchLogo.svg'
-import hamburgerMenu from '../images/icons/hamburger-menu.svg'
 
 export function NavBar() {
     const [display, setDisplay] = useState('display-none')
