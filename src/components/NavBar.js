@@ -31,7 +31,7 @@ export function NavBar() {
 
                 <div className="navbar-right">
 
-                    <div className="navbar-location-container medium-font"
+                    <div className="navbar-location-container"
                         onMouseEnter={locationHover}
                         onMouseLeave={locationLeaveHover}
                         >{location}

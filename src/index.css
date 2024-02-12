@@ -1,6 +1,8 @@
 :root {
   --mainColor: #1abc9c;
   --secondColor: gray;
+  --smallFont: 18px;
+  --mediumFont: 25px;
 }
 
 body {
@@ -26,8 +28,13 @@ code {
   border: 1px solid black;
 }
 
-.medium-font {font-size: 25px;}
-.small-font {font-size: 18px;}
+/* .medium-font {font-size: 25px;}
+.small-font {font-size: 18px;} */
+
+.submit-button {
+  width: 25%;
+
+}
 
 .margin-large {
   margin-top: 500px;
@@ -42,6 +49,7 @@ code {
   position: fixed;
   top: 0;
   width: 100%;
+  font-size: var(--smallFont);
 
   background: rgba(0, 0, 0, 0.21);
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.71) 0%, rgba(231, 56, 39, 0) 100%);
@@ -63,7 +71,7 @@ code {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
+  font-size: var(--mediumFont);
   margin-right: 3rem;
 }
 .navbar-right > div {
@@ -135,7 +143,7 @@ code {
   resize: vertical;
   padding: 10px;
 
-  font-size: 20px;
+
   border: 1px solid black;
   border-radius: 10px;
 }

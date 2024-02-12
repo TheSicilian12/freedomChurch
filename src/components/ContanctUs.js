@@ -7,6 +7,9 @@ export function ContanctUs() {
     const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
 
+    const sendMessage = () => {
+        console.log("send message")
+    }
 
 
     return (
@@ -53,7 +56,11 @@ export function ContanctUs() {
                         setMessage(e.target.value)
                     }}></textarea>
 
-
+                <button
+                    className="submit-button"
+                    onClick={() => sendMessage}>
+                    Submit
+                </button>
             </div>
         </>
     )
