@@ -7,7 +7,7 @@ export function HomePage() {
             <NavBar />
             <div className="margin-large">Home page</div>
 
-            <div>
+            <div className="border">
                 <ContanctUs />
             </div>
         </>

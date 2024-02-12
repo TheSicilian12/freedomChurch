@@ -170,11 +170,13 @@ code {
 
 /* -------------below-------------- Home Page --------------below-------------------- */
 .homepage-navbar {
-  position: absolute;
+position: absolute;
   top: 0px;
 }
 
+.homepage-contact-container {
 
+}
 
 
 

@@ -24,7 +24,7 @@ export function NavBar() {
         <>
             <div className="navbar-container">
                 <div className="navbar-left">
-                    <div className="homepage-navbar-left">
+                    <div className="navbar-logo-container">
                         <img src={churchLogo} className="navbar-logo" />
                     </div>
                 </div>
