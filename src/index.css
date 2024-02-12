@@ -137,7 +137,7 @@ code {
   width: 45%;
   padding: 10px;
 
-  font-size: 20px;
+  font-size: var(--smallFont);
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -149,6 +149,7 @@ code {
 
   border: 1px solid black;
   border-radius: 10px;
+  font-size: var(--smallFont);
 }
 
 .contact-input {
@@ -170,7 +171,8 @@ code {
 
 
 .input-label {
-  font-size: var(--mediumFont);
+  font-size: var(--smallFont);
+  font-weight: bold;
 }
 
 
