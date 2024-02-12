@@ -14,7 +14,7 @@ export function ContanctUs() {
 
     return (
         <>
-            <div className="contact-container">
+            <div className="contact-container input-label">
                 <div>Name</div>
                 <div className="contact-name-fields">
                     <input
