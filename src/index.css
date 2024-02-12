@@ -116,6 +116,19 @@ code {
   padding: 1vw;
 }
 
+.contact-name-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-input-small {
+  width: 48%;
+}
+
+.contact-input-large {
+  width: 100%;
+  resize: vertical;
+}
 
 /* -------------above-------------- Contact Us --------------above-------------------- */
 

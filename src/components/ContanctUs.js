@@ -12,37 +12,42 @@ export function ContanctUs() {
     return (
         <>
             <div className="contact-container border">
-                <div>
-                    <label>First</label>
+                <div>Name</div>
+                <div className="contact-name-fields">
                     <input
+                        className="contact-input-small"
                         type="text"
-                        value={firstName}
+                        // value={firstName}
                         // placeholder={firstName}
                         onChange={(e) => {
                             setFirstName(e.target.value)
                         }}></input>
 
-                    <label>Last</label>
                     <input
-                        value={lastName}
+                        className="contact-input-small"
+                        // value={lastName}
                         onChange={(e) => {
                             setLastName(e.target.value)
                         }}></input>
                 </div>
+
                 <label>Email</label>
                 <input
+                    className="contact-input-small"
                     onChange={(e) => {
                         setEmail(e.target.value)
                     }}></input>
 
                 <label>Phone Number</label>
                 <input
+                    className="contact-input"
                     onChange={(e) => {
                         setPhone(e.target.value)
                     }}></input>
 
                 <label>Question or message</label>
                 <textarea
+                    className="contact-input-large"
                     onChange={(e) => {
                         setMessage(e.target.value)
                     }}></textarea>
