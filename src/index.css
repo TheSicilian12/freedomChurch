@@ -168,29 +168,16 @@ code {
 
 
 /* -------------below-------------- Info Drop --------------below-------------------- */
-/* .info-content {
+.info-content-container {
   max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
 }
 
-.info-content.visible {
+.info-content-container.visible {
   max-height: 200px;
 }
 
-.info-content.hidden {
+.info-content-container.visible {
   max-height: 0;
-  overflow: hidden;
-} */
-
-
-.info-content.visible {
-  
-}
-
-.info-content.hidden {
-  max-height: 0;
-  overflow: hidden;
 }
 
 
