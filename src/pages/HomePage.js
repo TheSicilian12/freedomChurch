@@ -1,5 +1,6 @@
 import { NavBar } from '../components/NavBar';
 import { ContanctUs } from '../components/ContanctUs';
+import { InfoDrop } from '../components/InfoDrop';
 
 export function HomePage() {
     return (
@@ -7,9 +8,11 @@ export function HomePage() {
             <NavBar />
             <div className="margin-large">Home page</div>
 
-            <div className="border">
+            {/* <div className="border">
                 <ContanctUs />
-            </div>
+            </div> */}
+
+            <InfoDrop />
         </>
     )
 }
