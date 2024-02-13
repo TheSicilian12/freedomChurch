@@ -4,7 +4,7 @@ import SlideToggle from "react-slide-toggle";
 export function InfoDrop() {
     const [infoVisible, setInfoVisible] = useState(false);
     const contentRef = useRef(null);
-    const [contentHeight, setContentHeight] = useState(0);
+    const [underline, setUnderline] = useState(false);
 
 
     return (
@@ -14,7 +14,8 @@ export function InfoDrop() {
                 duration={500}>
                 {({ toggle, setCollapsibleElement }) => (
                     <div className="my-collapsible">
-                        <div className="my-collapsible__toggle" onClick={toggle}>
+                        <div className={`my-collapsible__toggle sliding-underline ${underline ? "clicked" : ""}`}
+                            onClick={() => { toggle(); setUnderline(!underline); }}>
                             toggle
                         </div>
                         <div className="my-collapsible__content" ref={setCollapsibleElement}>

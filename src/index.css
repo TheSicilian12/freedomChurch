@@ -170,6 +170,29 @@ code {
 /* -------------below-------------- Info Drop --------------below-------------------- */
 
 
+
+.sliding-underline {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.sliding-underline:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width 0.6s ease, background-color 0.6s ease;
+}
+
+.sliding-underline.clicked:after {
+  width: 100%;
+  background: var(--mainColor);
+}
+
+
+
+
 /* -------------above--------------  Info Drop --------------above-------------------- */
 
 
