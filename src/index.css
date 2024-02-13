@@ -168,17 +168,6 @@ code {
 
 
 /* -------------below-------------- Info Drop --------------below-------------------- */
-.info-content-container {
-  max-height: 0;
-}
-
-.info-content-container.visible {
-  max-height: 200px;
-}
-
-.info-content-container.visible {
-  max-height: 0;
-}
 
 
 /* -------------above--------------  Info Drop --------------above-------------------- */

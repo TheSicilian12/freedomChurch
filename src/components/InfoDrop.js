@@ -14,9 +14,9 @@ export function InfoDrop() {
                 duration={500}>
                 {({ toggle, setCollapsibleElement }) => (
                     <div className="my-collapsible">
-                        <button className="my-collapsible__toggle" onClick={toggle}>
+                        <div className="my-collapsible__toggle" onClick={toggle}>
                             toggle
-                        </button>
+                        </div>
                         <div className="my-collapsible__content" ref={setCollapsibleElement}>
                             <div className="my-collapsible__content-inner">Collapsible content</div>
                         </div>
