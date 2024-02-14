@@ -19,6 +19,7 @@ export function HomePage() {
                 headerSize={"medium-font"}
                 content={infoDropContent}
                 contentSize={"small-font"}
+                arrowSize={"fa-xs"}
                 />
         </>
     )

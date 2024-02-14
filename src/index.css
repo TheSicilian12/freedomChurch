@@ -177,6 +177,15 @@ code {
   padding: 10px;
 }
 
+.info-drop-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-drop-header {
+  margin-left: 5px;
+}
+
 .sliding-underline {
   display: inline-block;
   cursor: pointer;
@@ -196,8 +205,6 @@ code {
   width: 100%;
   background: var(--mainColor);
 }
-
-
 
 
 /* -------------above--------------  Info Drop --------------above-------------------- */
