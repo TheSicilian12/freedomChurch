@@ -15,7 +15,11 @@ export function HomePage() {
                 <ContanctUs />
             </div> */}
 
-            <InfoDrop header={infoDropHeader} content={infoDropContent}/>
+            <InfoDrop header={infoDropHeader}
+                headerSize={"medium-font"}
+                content={infoDropContent}
+                contentSize={"small-font"}
+                />
         </>
     )
 }
