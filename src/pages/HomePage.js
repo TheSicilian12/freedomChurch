@@ -3,6 +3,9 @@ import { ContanctUs } from '../components/ContanctUs';
 import { InfoDrop } from '../components/InfoDrop';
 
 export function HomePage() {
+    const infoDropHeader = "Header"
+    const infoDropContent = "Content"
+
     return (
         <>
             <NavBar />
@@ -12,7 +15,7 @@ export function HomePage() {
                 <ContanctUs />
             </div> */}
 
-            <InfoDrop />
+            <InfoDrop header={infoDropHeader} content={infoDropContent}/>
         </>
     )
 }

@@ -168,6 +168,10 @@ code {
 
 
 /* -------------below-------------- Info Drop --------------below-------------------- */
+.info-drop-container {
+  width: 40vw;
+  padding: 10px;
+}
 
 .sliding-underline {
   display: inline-block;
