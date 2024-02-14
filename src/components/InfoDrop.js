@@ -13,11 +13,13 @@ export function InfoDrop() {
                 collapsed
                 duration={500}>
                 {({ toggle, setCollapsibleElement }) => (
-                    <div className="my-collapsible">
+                    <div className={`my-collapsible `}>
+
                         <div className={`my-collapsible__toggle sliding-underline ${underline ? "clicked" : ""}`}
                             onClick={() => { toggle(); setUnderline(!underline); }}>
                             toggle
                         </div>
+
                         <div className="my-collapsible__content" ref={setCollapsibleElement}>
                             <div className="my-collapsible__content-inner">Collapsible content</div>
                         </div>

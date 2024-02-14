@@ -169,11 +169,10 @@ code {
 
 /* -------------below-------------- Info Drop --------------below-------------------- */
 
-
-
 .sliding-underline {
   display: inline-block;
   cursor: pointer;
+  width: 100%;
 }
 
 .sliding-underline:after {
