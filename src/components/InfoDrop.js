@@ -20,7 +20,7 @@ export function InfoDrop({ header, content, headerSize, contentSize, arrowSize }
                             onClick={() => { toggle(); setUnderline(!underline); }}>
 
                             <div className="info-drop-header-container">
-                                <i class={`fa fa-chevron-right fa-xs ${arrowSize}`}></i>
+                                <i class={`fa fa-chevron-right fa-xs ${arrowSize} ${underline ? "info-drop-arrow-down" : "info-drop-arrow-normal"}`}></i>
                                 <div className="info-drop-header">{header}</div>
                             </div>
                         </div>

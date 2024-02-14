@@ -186,6 +186,7 @@ code {
   margin-left: 5px;
 }
 
+/* underline */
 .sliding-underline {
   display: inline-block;
   cursor: pointer;
@@ -205,6 +206,17 @@ code {
   width: 100%;
   background: var(--mainColor);
 }
+/* underline */
+
+.info-drop-arrow-down {
+  transform: rotate(90deg);
+  transition-duration: 1s;
+}
+
+.info-drop-arrow-normal {
+  transition-duration: 1s;
+}
+
 
 
 /* -------------above--------------  Info Drop --------------above-------------------- */
