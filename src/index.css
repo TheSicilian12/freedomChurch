@@ -25,6 +25,18 @@ code {
 }
 
 .display-none {display: none}
+.display-flex {display: flex}
+.display-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-hcenter {justify-content: center;}
+.flex-vcenter {align-items: center;}
+
+.flex-even {
+  justify-content: space-evenly;
+}
 
 .small-font {font-size: var(--smallFont)}
 .medium-font {font-size: var(--mediumFont)}
@@ -34,6 +46,11 @@ code {
 .font-bold {font-weight: bold;}
 
 .font-color-white {color: white}
+
+.vw-35 {width: 35vw;}
+.vw-40 {width: 40vw;}
+.vw-50 {width: 50vw;}
+
 
 
 .border {
@@ -293,9 +310,7 @@ position: absolute;
   }
 }
 
-.homepage-welcome {
-  width: 50vw;
-}
+
 
 
 /* -------------above--------------  Home Page --------------above-------------------- */

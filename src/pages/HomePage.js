@@ -13,22 +13,22 @@ export function HomePage() {
     const genInfoContent = `We are a grace-based, Bible-based, Spirit-led, contemporary expression of love and hope for this generation. We invite you to come follow Jesus with us! Here at Freedom Church, we have a passion to see sinners set free and God's people transformed. We long to see lives changed, chains broken and God's people flourish in the gifts He has given them.`
 
     return (
-        <>
-            <NavBar />
-            {/* <img src={homePageImg}
-                class="homepage-header-img"/> */}
+        <div class="homepage-container display-flex-col">
             <div className="homepage-header"></div>
+            <NavBar />
 
-
-            <div className="homepage-welcome">
-                <GenInfo header={genInfoHeader}
-                    content={genInfoContent}
-                    headerSize="xlarge-font font-bold"
-                    contentSize="medium-font"
+            <div class="homepage-first display-flex flex-even">
+                <div className="homepage-welcome vw-40">
+                    <GenInfo header={genInfoHeader}
+                        content={genInfoContent}
+                        headerSize="xlarge-font font-bold"
+                        contentSize="medium-font"
                     />
-            </div>
+                </div>
 
-            <img src={homePageImg} />
+                <img src={homePageImg}
+                    class="vw-35"/>
+            </div>
 
 
             <div className="border">
@@ -41,6 +41,6 @@ export function HomePage() {
                 contentSize={"small-font"}
                 arrowSize={"fa-xs"}
             />
-        </>
+        </div>
     )
 }
