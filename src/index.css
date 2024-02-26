@@ -3,6 +3,7 @@
   --secondColor: gray;
   --smallFont: 18px;
   --mediumFont: 20px;
+  --largeFont: 50px;
 }
 
 body {
@@ -26,7 +27,9 @@ code {
 
 .small-font {font-size: var(--smallFont)}
 .medium-font {font-size: var(--mediumFont)}
+.large-font {font-size: var(--largeFont)}
 
+.font-bold {font-weight: bold;}
 
 .border {
   border: 1px solid black;

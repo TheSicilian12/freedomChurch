@@ -1,4 +1,4 @@
-export function GenInfo() {
+export function GenInfo( {header, content, img, symbol, headerSize, contentSize}) {
 
 
 
@@ -6,10 +6,9 @@ export function GenInfo() {
         <>
             <div>General Info</div>
 
-            <div class="genInfo-symbol"></div>
-            <div class="genInfo-header"></div>
-            <div class="genInfo-body"></div>
-            <div class="genInfo-img"></div>
+            <div class={`genInfo-header ${headerSize}`}>{header}</div>
+            <div class={`genInfo-content ${contentSize}`}>{content}</div>
+
         </>
     )
 }
