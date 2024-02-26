@@ -31,7 +31,7 @@ export function NavBar() {
 
                 <div className="navbar-right">
 
-                    <div className="navbar-location-container large-font"
+                    <div className="navbar-location-container large-font font-color-white"
                         onMouseEnter={locationHover}
                         onMouseLeave={locationLeaveHover}
                         >{location}
@@ -44,7 +44,7 @@ export function NavBar() {
                         </div>
                     </div>
 
-                    <div className="navbar-hamburger-container">
+                    <div className="navbar-hamburger-container ">
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>

@@ -33,6 +33,9 @@ code {
 
 .font-bold {font-weight: bold;}
 
+.font-color-white {color: white}
+
+
 .border {
   border: 1px solid black;
 }
@@ -96,8 +99,6 @@ code {
 .navbar-location-container {
   position: relative;
   padding-bottom: 5px;
-
-  color: white;
 }
 
 .navbar-locations-container {
@@ -125,7 +126,7 @@ code {
   height: 25px;
 }
 .navbar-hamburger-line {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid white;
 }
 
 /* -------------above-------------- Navbar --------------above-------------------- */
