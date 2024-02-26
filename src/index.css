@@ -235,20 +235,19 @@ position: absolute;
 }
 
 .homepage-header {
-  /* height: 50px; */
-  /* width: 100vw; */
   border: 1px solid black;
   height: 100px;
   background-image: url('/home/mguidera/FreedomChurchReact/freedomChurch/src/images/freedomChurchHomepage.jpeg');
   background-size: cover;
   background-position: center bottom;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+
   @media screen and (max-width: 768px) {
       display: none;
   }
+}
+
+.homepage-welcome {
+  width: 50vw;
 }
 
 

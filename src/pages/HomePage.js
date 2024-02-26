@@ -17,13 +17,15 @@ export function HomePage() {
             <NavBar />
             {/* <img src={homePageImg}
                 class="homepage-header-img"/> */}
-            <div class="homepage-header"></div>
+            <div className="homepage-header"></div>
 
 
-            <GenInfo header={genInfoHeader}
+            <div className="border homepage-welcome">
+                <GenInfo header={genInfoHeader}
                     content={genInfoContent}
                     headerSize="large-font font-bold"
-                    contentSize="medium-font"/>
+                    contentSize="medium-font" />
+            </div>
 
             <div className="margin-large">Home page</div>
 
@@ -36,7 +38,7 @@ export function HomePage() {
                 content={infoDropContent}
                 contentSize={"small-font"}
                 arrowSize={"fa-xs"}
-                />
+            />
         </>
     )
 }
