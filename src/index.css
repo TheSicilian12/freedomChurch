@@ -52,6 +52,9 @@ code {
 .vw-50 {width: 50vw;}
 
 
+.below-navBar {
+  margin-top: 100px;
+}
 
 .border {
   border: 1px solid black;
@@ -64,10 +67,6 @@ code {
   border: 1px solid black;
   border-radius: 5px;
   margin-top: 10px;
-}
-
-.margin-large {
-  margin-top: 500px;
 }
 
 
@@ -280,15 +279,6 @@ code {
 
 
 
-
-
-
-
-
-
-
-
-
 /* -------------below--------------  Pages --------------below-------------------- */
 
 
@@ -309,7 +299,6 @@ position: absolute;
       display: none;
   }
 }
-
 
 
 

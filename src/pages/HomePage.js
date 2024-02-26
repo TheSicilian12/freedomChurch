@@ -17,7 +17,7 @@ export function HomePage() {
             <div className="homepage-header"></div>
             <NavBar />
 
-            <div class="homepage-first display-flex flex-even">
+            <div class="homepage-first display-flex flex-even below-navBar">
                 <div className="homepage-welcome vw-40">
                     <GenInfo header={genInfoHeader}
                         content={genInfoContent}
