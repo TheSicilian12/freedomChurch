@@ -3,7 +3,7 @@ import { ContanctUs } from '../components/ContanctUs';
 import { InfoDrop } from '../components/InfoDrop';
 import { GenInfo } from '../components/GenInfo';
 
-import homePageImg from '../images/freedomChurchHomepage.jpeg'
+import homePageImg from '../images/congregation.jpeg';
 
 export function HomePage() {
     const infoDropHeader = "Header"
@@ -27,6 +27,9 @@ export function HomePage() {
                     contentSize="medium-font"
                     />
             </div>
+
+            <img src={homePageImg} />
+
 
             <div className="border">
                 <ContanctUs />
