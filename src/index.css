@@ -45,7 +45,10 @@ code {
 
 .font-bold {font-weight: bold;}
 
-.font-color-white {color: white}
+.font-color-white {color: white;}
+.font-color-second {color: var(--secondColor);}
+
+.bg-color-main {background-color: var(--mainColor);}
 
 .vw-35 {width: 35vw;}
 .vw-40 {width: 40vw;}

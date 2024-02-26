@@ -17,7 +17,7 @@ export function HomePage() {
             <div className="homepage-header"></div>
             <NavBar />
 
-            <div class="homepage-first display-flex flex-even below-navBar">
+            <div className="homepage-first display-flex flex-even below-navBar">
                 <div className="homepage-welcome vw-40">
                     <GenInfo header={genInfoHeader}
                         content={genInfoContent}
@@ -27,8 +27,29 @@ export function HomePage() {
                 </div>
 
                 <img src={homePageImg}
-                    class="vw-35"/>
+                    className="vw-35"/>
             </div>
+
+            <div className="homepage-second bg-color-main">
+                <div>
+                    <GenInfo header="Ways to Expereince Freedom Church"
+                            headerSize = "xlarge-font font-bold font-color-white"
+                            content="There are several ways to get to know us better. Whatever your comfort level, there are opportunities for you to join in community and draw nearer to Jesus."
+                            contentSize="medium-font font-color-white"/>
+                </div>
+
+                <div>
+                    <GenInfo header="Plan a visit"
+                            headerSize="medium-font font-color-white"
+                            content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
+                            contentSize="small-font font-color-second"
+                    />
+
+
+                </div>
+            </div>
+
+
 
 
             <div className="border">
