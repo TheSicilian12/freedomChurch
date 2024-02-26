@@ -1,6 +1,7 @@
 import { NavBar } from '../components/NavBar';
 import { ContanctUs } from '../components/ContanctUs';
 import { InfoDrop } from '../components/InfoDrop';
+import { GenInfo } from '../components/GenInfo';
 
 import homePageImg from '../images/freedomChurchHomepage.jpeg'
 
@@ -15,6 +16,8 @@ export function HomePage() {
                 class="homepage-header-img"/> */}
             <div class="homepage-header"></div>
 
+
+            <GenInfo />
 
             <div className="margin-large">Home page</div>
 
