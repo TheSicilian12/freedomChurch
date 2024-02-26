@@ -20,14 +20,13 @@ export function HomePage() {
             <div className="homepage-header"></div>
 
 
-            <div className="border homepage-welcome">
+            <div className="homepage-welcome">
                 <GenInfo header={genInfoHeader}
                     content={genInfoContent}
-                    headerSize="large-font font-bold"
-                    contentSize="medium-font" />
+                    headerSize="xlarge-font font-bold"
+                    contentSize="medium-font"
+                    />
             </div>
-
-            <div className="margin-large">Home page</div>
 
             <div className="border">
                 <ContanctUs />

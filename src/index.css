@@ -3,7 +3,8 @@
   --secondColor: gray;
   --smallFont: 18px;
   --mediumFont: 20px;
-  --largeFont: 50px;
+  --largeFont: 35px;
+  --xlargeFont: 50px;
 }
 
 body {
@@ -28,6 +29,7 @@ code {
 .small-font {font-size: var(--smallFont)}
 .medium-font {font-size: var(--mediumFont)}
 .large-font {font-size: var(--largeFont)}
+.xlarge-font {font-size: var(--xlargeFont);}
 
 .font-bold {font-weight: bold;}
 
@@ -47,6 +49,10 @@ code {
 .margin-large {
   margin-top: 500px;
 }
+
+
+/* -------------below-------------  Components --------------below-------------------- */
+
 
 /* -------------below-------------- Navbar --------------below-------------------- */
 
@@ -90,6 +96,8 @@ code {
 .navbar-location-container {
   position: relative;
   padding-bottom: 5px;
+
+  color: white;
 }
 
 .navbar-locations-container {
@@ -226,6 +234,44 @@ code {
 
 
 
+/* -------------below-------------  Gen Info --------------below-------------------- */
+
+.genInfo-header {
+  margin-bottom: 1%;
+}
+
+.genInfo-content {
+  line-height: 150%;
+}
+
+
+
+
+/* -------------above--------------  Gen Info --------------above-------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------below--------------  Pages --------------below-------------------- */
 
 
 /* -------------below-------------- Home Page --------------below-------------------- */
