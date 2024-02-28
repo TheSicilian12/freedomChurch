@@ -13,8 +13,8 @@ export function Visit() {
             </div>
 
             <div className="display-flex">
-                <div className="border display-flex-col  vw-35">
-                    <InfoDrop header="WHAT SHOULD I WEAR?kjhkjghlkjhlka"
+                <div className="display-flex-col  vw-35 experience-genInfo">
+                    <InfoDrop header="WHAT SHOULD I WEAR?"
                         headerSize={"medium-font"}
                         content="We want church to be a place you feel comfortable so you won't find a dress code here. You'll see most people wearing jeans and t-shirts, but pollos and button ups are common too."
                         contentSize={"small-font"}
@@ -50,7 +50,7 @@ export function Visit() {
                     />
                 </div>
 
-                <div>
+                <div className="">
                     <ContanctUs />
                 </div>
             </div>
