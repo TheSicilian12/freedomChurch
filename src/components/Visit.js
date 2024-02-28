@@ -5,7 +5,7 @@ export function Visit() {
 
     return (
         <div className="display-flex-col flex-vcenter m-50">
-            <div className="display-flex-col flex-vcenter">
+            <div className="display-flex-col flex-vcenter mb-50">
                 <div className="xlarge-font font-bold m-30">Coming to Visit?</div>
                 <div className="medium-font">We know visiting a church for the first time can be intimidating,</div>
                 <div className="medium-font">and we want to make your visit at Freedom Church a great one!</div>
