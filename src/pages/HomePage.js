@@ -3,6 +3,7 @@ import { ContanctUs } from '../components/ContanctUs';
 import { InfoDrop } from '../components/InfoDrop';
 import { GenInfo } from '../components/GenInfo';
 import { Experience } from '../components/Experience';
+import { Visit } from '../components/Visit';
 
 import homePageImg from '../images/congregation.jpeg';
 
@@ -36,7 +37,7 @@ export function HomePage() {
             </div>
 
             <div className="border">
-                <ContanctUs />
+                <Visit />
             </div>
 
             <InfoDrop header={infoDropHeader}
