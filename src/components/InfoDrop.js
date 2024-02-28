@@ -24,7 +24,7 @@ export function InfoDrop({ header, content, headerSize, contentSize, arrowSize }
                             </div>
                         </div>
 
-                        <div className="v100" ref={setCollapsibleElement}>
+                        <div className="info-drop-content-container" ref={setCollapsibleElement}>
                             <div className={`v100 ${contentSize}`}>
                                 {content}
                             </div>

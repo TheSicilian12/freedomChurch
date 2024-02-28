@@ -216,6 +216,10 @@ code {
   align-items: center;
 }
 
+.info-drop-content-container {
+  margin-top: 5px;
+}
+
 .info-drop-header {
   margin-left: 5px;
 }
