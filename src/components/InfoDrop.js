@@ -8,15 +8,14 @@ export function InfoDrop({ header, content, headerSize, contentSize, arrowSize }
 
 
     return (
-        <>
+        <div className="border v100">
             <SlideToggle
                 collapsed
                 duration={500}>
                 {({ toggle, setCollapsibleElement }) => (
 
-                    <div className={`my-collapsible info-drop-container`}>
-                        <div className={`my-collapsible__toggle
-                                        sliding-underline ${underline ? "clicked" : ""} ${headerSize}`}
+                    <div className={`info-drop-container`}>
+                        <div className={`sliding-underline ${underline ? "clicked" : ""} ${headerSize}`}
                             onClick={() => { toggle(); setUnderline(!underline); }}>
 
                             <div className="info-drop-header-container">
@@ -25,14 +24,14 @@ export function InfoDrop({ header, content, headerSize, contentSize, arrowSize }
                             </div>
                         </div>
 
-                        <div className="my-collapsible__content" ref={setCollapsibleElement}>
-                            <div className={`my-collapsible__content-inner ${contentSize}`}>
+                        <div className="border v100" ref={setCollapsibleElement}>
+                            <div className={`v100 ${contentSize}`}>
                                 {content}
                             </div>
                         </div>
                     </div>
                 )}
             </SlideToggle>
-        </>
+        </div>
     );
 }
