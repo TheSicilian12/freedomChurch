@@ -31,7 +31,7 @@ export function HomePage() {
                     className="vw-35" />
             </div>
 
-            <div className="homepage-second bg-color-main display-flex">
+            <div className="homepage-second bg-color-main">
                 <Experience />
             </div>
 
