@@ -24,7 +24,7 @@ export function HomePage() {
                     <GenInfo header={genInfoHeader}
                         content={genInfoContent}
                         headerSize="xlarge-font font-bold"
-                        contentSize="medium-font"
+                        contentSize="small-font"
                     />
                 </div>
 
