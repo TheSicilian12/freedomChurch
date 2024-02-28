@@ -4,12 +4,12 @@ import { InfoDrop } from '../components/InfoDrop';
 export function Visit() {
 
     return (
-        <div className="display-flex-col flex-vcenter">
-            <div>
-                <div>Coming to Visit?</div>
-                <div>We know visiting a church for the first time can be intimidating,</div>
-                <div>and we want to make your visit at Freedom Church a great one!</div>
-                <div>If you would like to get in touch with someone, please fill out the contact form below.</div>
+        <div className="display-flex-col flex-vcenter m-50">
+            <div className="display-flex-col flex-vcenter">
+                <div className="xlarge-font font-bold m-30">Coming to Visit?</div>
+                <div className="medium-font">We know visiting a church for the first time can be intimidating,</div>
+                <div className="medium-font">and we want to make your visit at Freedom Church a great one!</div>
+                <div className="medium-font m-30">If you would like to get in touch with someone, please fill out the contact form below.</div>
             </div>
 
             <div className="display-flex">
