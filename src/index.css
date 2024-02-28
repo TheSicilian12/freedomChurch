@@ -205,8 +205,8 @@ code {
 
 /* -------------below-------------- Info Drop --------------below-------------------- */
 .info-drop-container {
-  width: 40vw;
-  padding: 10px;
+  width: 100%;
+  /* margin: 10px; */
 }
 
 .info-drop-header-container {
