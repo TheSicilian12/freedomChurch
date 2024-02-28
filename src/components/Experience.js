@@ -14,10 +14,12 @@ export function Experience() {
 
             <div class="display-flex">
                 <div>
+
                     <GenInfo header="Plan a visit"
                         headerSize="medium-font font-color-white"
                         content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
                         contentSize="xsmall-font font-color-second"
+                        img="fa-solid fa-location-dot"
                         className="experience-genInfo"
                     />
                     <GenInfo header="Plan a visit"
