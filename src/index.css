@@ -275,6 +275,10 @@ code {
   margin: 50px;
 }
 
+.experience-mainInfo {
+  width: 70vw;
+}
+
 .experience-genInfo {
   margin: 20px;
 }

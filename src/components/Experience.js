@@ -5,7 +5,7 @@ export function Experience() {
 
     return (
         <div className="experience-container display-flex">
-            <div>
+            <div className="experience-mainInfo">
                 <GenInfo header="Ways to Expereince Freedom Church"
                     headerSize="xlarge-font font-bold font-color-white"
                     content="There are several ways to get to know us better. Whatever your comfort level, there are opportunities for you to join in community and draw nearer to Jesus."
