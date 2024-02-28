@@ -1,8 +1,9 @@
 :root {
   --mainColor: #1abc9c;
   --secondColor: gray;
-  --smallFont: 18px;
-  --mediumFont: 20px;
+  --xsmallFont: 20px;
+  --smallFont: 25px;
+  --mediumFont: 30px;
   --largeFont: 35px;
   --xlargeFont: 50px;
 }
@@ -38,6 +39,7 @@ code {
   justify-content: space-evenly;
 }
 
+.xsmall-font {font-size: var(--xsmallFont);}
 .small-font {font-size: var(--smallFont)}
 .medium-font {font-size: var(--mediumFont)}
 .large-font {font-size: var(--largeFont)}

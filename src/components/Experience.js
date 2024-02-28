@@ -9,7 +9,7 @@ export function Experience() {
                 <GenInfo header="Ways to Expereince Freedom Church"
                     headerSize="xlarge-font font-bold font-color-white"
                     content="There are several ways to get to know us better. Whatever your comfort level, there are opportunities for you to join in community and draw nearer to Jesus."
-                    contentSize="medium-font font-color-white"/>
+                    contentSize="xsmall-font font-color-white"/>
             </div>
 
             <div class="display-flex">
@@ -17,13 +17,13 @@ export function Experience() {
                     <GenInfo header="Plan a visit"
                         headerSize="medium-font font-color-white"
                         content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
-                        contentSize="small-font font-color-second"
+                        contentSize="xsmall-font font-color-second"
                         className="experience-genInfo"
                     />
                     <GenInfo header="Plan a visit"
                         headerSize="medium-font font-color-white"
                         content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
-                        contentSize="small-font font-color-second"
+                        contentSize="xsmall-font font-color-second"
                         className="experience-genInfo"
                     />
                 </div>
@@ -31,13 +31,13 @@ export function Experience() {
                     <GenInfo header="Plan a visit"
                         headerSize="medium-font font-color-white"
                         content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
-                        contentSize="small-font font-color-second"
+                        contentSize="xsmall-font font-color-second"
                         className="experience-genInfo"
                     />
                     <GenInfo header="Plan a visit"
                         headerSize="medium-font font-color-white"
                         content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
-                        contentSize="small-font font-color-second"
+                        contentSize="xsmall-font font-color-second"
                         className="experience-genInfo"
                     />
                 </div>
