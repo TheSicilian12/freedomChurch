@@ -8,7 +8,7 @@ export function InfoDrop({ header, content, headerSize, contentSize, arrowSize }
 
 
     return (
-        <div className="border v100">
+        <div className="m-10">
             <SlideToggle
                 collapsed
                 duration={500}>
@@ -24,7 +24,7 @@ export function InfoDrop({ header, content, headerSize, contentSize, arrowSize }
                             </div>
                         </div>
 
-                        <div className="border v100" ref={setCollapsibleElement}>
+                        <div className="v100" ref={setCollapsibleElement}>
                             <div className={`v100 ${contentSize}`}>
                                 {content}
                             </div>
