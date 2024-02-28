@@ -14,7 +14,7 @@ export function ContanctUs() {
 
     return (
         <>
-            <div className="contact-container input-label">
+            <div className="contact-container small-font font-bold">
 
                 <div>Name</div>
                 <div>
