@@ -2,6 +2,7 @@ import { NavBar } from '../components/NavBar';
 import { ContanctUs } from '../components/ContanctUs';
 import { InfoDrop } from '../components/InfoDrop';
 import { GenInfo } from '../components/GenInfo';
+import { Experience } from '../components/Experience';
 
 import homePageImg from '../images/congregation.jpeg';
 
@@ -31,44 +32,8 @@ export function HomePage() {
             </div>
 
             <div className="homepage-second bg-color-main display-flex">
-                <div>
-                    <GenInfo header="Ways to Expereince Freedom Church"
-                        headerSize="xlarge-font font-bold font-color-white"
-                        content="There are several ways to get to know us better. Whatever your comfort level, there are opportunities for you to join in community and draw nearer to Jesus."
-                        contentSize="medium-font font-color-white" />
-                </div>
-
-                <div class="display-flex">
-                    <div>
-                        <GenInfo header="Plan a visit"
-                            headerSize="medium-font font-color-white"
-                            content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
-                            contentSize="small-font font-color-second"
-                        />
-                        <GenInfo header="Plan a visit"
-                            headerSize="medium-font font-color-white"
-                            content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
-                            contentSize="small-font font-color-second"
-                        />
-                    </div>
-                    <div>
-
-                        <GenInfo header="Plan a visit"
-                            headerSize="medium-font font-color-white"
-                            content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
-                            contentSize="small-font font-color-second"
-                        />
-                        <GenInfo header="Plan a visit"
-                            headerSize="medium-font font-color-white"
-                            content="We gather every weekend as a church to be inspired to follow Jesus. We would love for you to be our guest."
-                            contentSize="small-font font-color-second"
-                        />
-                    </div>
-                </div>
+                <Experience />
             </div>
-
-
-
 
             <div className="border">
                 <ContanctUs />
