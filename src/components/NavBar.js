@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import churchLogo from '../images/ChurchLogo.svg'
 
-export function NavBar() {
+export function NavBar({mainDisplay, setMainDisplay}) {
     const [display, setDisplay] = useState('display-none')
     const [location, setLocation] = useState('Choose Your Location')
 
@@ -43,7 +43,8 @@ export function NavBar() {
                         </div>
                     </div>
 
-                    <div className="navbar-hamburger-container">
+                    <div className="navbar-hamburger-container"
+                        onClick={() => setMainDisplay(!mainDisplay)}>
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>
