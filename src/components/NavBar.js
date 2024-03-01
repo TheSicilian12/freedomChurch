@@ -5,6 +5,7 @@ import churchLogo from '../images/ChurchLogo.svg'
 export function NavBar({mainDisplay, setMainDisplay}) {
     const [display, setDisplay] = useState('display-none')
     const [location, setLocation] = useState('Choose Your Location')
+    const [mainBackground, setMainBackground] = useState(true);
 
     const locationHover = () => {
         display === 'display-none' ? setDisplay('display') : setDisplay('display-none');
@@ -19,9 +20,14 @@ export function NavBar({mainDisplay, setMainDisplay}) {
        locationLeaveHover();
     }
 
+    const coverSelector = (e) => {
+        setMainDisplay(!mainDisplay);
+        setMainBackground(!mainBackground);
+    }
+
     return (
         <>
-            <div className="navbar-container">
+            <div className={`navbar-container ${mainBackground ? "bg-navbar-container" : ""}`}>
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
                         <img src={churchLogo} className="navbar-logo" />
@@ -44,7 +50,7 @@ export function NavBar({mainDisplay, setMainDisplay}) {
                     </div>
 
                     <div className="navbar-hamburger-container"
-                        onClick={() => setMainDisplay(!mainDisplay)}>
+                        onClick={() => coverSelector()}>
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>
