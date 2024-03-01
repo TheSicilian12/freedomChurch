@@ -6,6 +6,7 @@ import { InfoDrop } from '../components/InfoDrop';
 import { GenInfo } from '../components/GenInfo';
 import { Experience } from '../components/Experience';
 import { Visit } from '../components/Visit';
+import { CoverScreen } from '../components/CoverScreen';
 
 import homePageImg from '../images/congregation.jpeg';
 
@@ -15,6 +16,7 @@ export function HomePage() {
     return (
         <>
             <NavBar mainDisplay={mainDisplay} setMainDisplay={setMainDisplay}/>
+            {!mainDisplay && <CoverScreen />}
             {mainDisplay && <div className="homepage-container display-flex-col">
 
                 <div className="homepage-header"></div>
