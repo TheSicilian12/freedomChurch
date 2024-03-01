@@ -4,7 +4,10 @@ export function MainMenu() {
 
     return (
         <div className="">
-           Hello
+
+            <div className="pt-100">Hello</div>
+
+
         </div>
     )
 }
