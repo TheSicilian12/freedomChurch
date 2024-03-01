@@ -55,8 +55,11 @@ code {
 .vw-35 {width: 35vw;}
 .vw-40 {width: 40vw;}
 .vw-50 {width: 50vw;}
+.vw-100 {width: 100vw;}
 
 .v100 {width: 100%;}
+
+.vh-100 {height: 100vh;}
 
 .m-10 {margin: 10px;}
 .m-20 {margin: 20px;}
@@ -297,7 +300,9 @@ code {
 
 
 
+/* -------------below-------------- Cover Screen --------------below-------------------- */
 
+/* -------------above-------------- Cover Screen --------------above-------------------- */
 
 
 
