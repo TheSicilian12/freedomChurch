@@ -1,13 +1,12 @@
 import { useState } from 'react';
 
-import { CoverScreen } from '../components/CoverScreen';
+import { ModalMenu } from './ModalMenu';
 
 import churchLogo from '../images/ChurchLogo.svg'
 
 export function NavBar() {
     const [display, setDisplay] = useState('display-none')
     const [location, setLocation] = useState('Choose Your Location')
-    const [coverScreen, setCoverScreen] = useState(false);
 
     const locationHover = () => {
         display === 'display-none' ? setDisplay('display') : setDisplay('display-none');
@@ -24,7 +23,7 @@ export function NavBar() {
 
     return (
         <>
-            {coverScreen && <CoverScreen />}
+            <ModalMenu />
             <div className="navbar-container">
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
@@ -47,8 +46,7 @@ export function NavBar() {
                         </div>
                     </div>
 
-                    <div className="navbar-hamburger-container"
-                        onClick={() => setCoverScreen(!coverScreen)}>
+                    <div className="navbar-hamburger-container">
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>

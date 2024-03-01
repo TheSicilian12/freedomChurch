@@ -12,7 +12,7 @@ export function Experience() {
                     contentSize="xsmall-font font-color-white"/>
             </div>
 
-            <div class="display-flex">
+            <div className="display-flex">
                 <div>
 
                     <GenInfo header="Plan a visit"

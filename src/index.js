@@ -8,13 +8,18 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './App';
 
+// 3/1/24
+import { ModalProvider, Modal } from "./context/Modal";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ModalProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </ModalProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
