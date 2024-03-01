@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-import { ModalMenu } from './ModalMenu';
+import OpenModalButton from './OpenModalButton';
+import OpenAddCommentModal from './OpenAddCommentModal';
 
 import churchLogo from '../images/ChurchLogo.svg'
 
@@ -23,7 +24,11 @@ export function NavBar() {
 
     return (
         <>
-            <ModalMenu />
+        <OpenModalButton
+                className="button-no-dimensions comment-add-comment-width"
+                buttonText="Add Comment"
+                modalComponent={<OpenAddCommentModal type={"new"} productId={1} />}
+            />
             <div className="navbar-container">
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
