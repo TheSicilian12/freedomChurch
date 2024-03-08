@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 
 import { NavBar } from '../components/NavBar';
+import { Footer } from '../components/Footer';
 import { ContanctUs } from '../components/ContanctUs';
 import { InfoDrop } from '../components/InfoDrop';
 import { GenInfo } from '../components/GenInfo';
@@ -41,6 +42,10 @@ export function HomePage() {
 
                 <div className="border">
                     <Visit />
+                </div>
+
+                <div>
+                    <Footer />
                 </div>
             </div>}
         </>

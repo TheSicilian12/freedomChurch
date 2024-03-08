@@ -10,7 +10,7 @@ https://www.npmjs.com/package/react-slide-toggle
 font awesome resizing info:
 https://fontawesome.com/docs/web/style/size
 
-
+npm install @react-google-maps/api use-places-autocomplete
 
 # Getting Started with Create React App
 
