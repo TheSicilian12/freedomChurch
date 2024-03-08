@@ -43,6 +43,10 @@ code {
   justify-content: space-between;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .xsmall-font {font-size: var(--xsmallFont);}
 .small-font {font-size: var(--smallFont)}
 .medium-font {font-size: var(--mediumFont)}
@@ -69,6 +73,8 @@ code {
 .m-20 {margin: 20px;}
 .m-30 {margin: 30px;}
 .m-50 {margin: 50px;}
+
+.ml-10 {margin-left: 10px;}
 
 .mb-50 {margin-bottom: 50px;}
 
