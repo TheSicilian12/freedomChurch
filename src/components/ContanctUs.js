@@ -20,7 +20,7 @@ export function ContanctUs() {
                 <div>
                     <div className="contact-name-fields">
                         <input
-                            className="contact-input-small contact-input"
+                            className="contact-input-small border-hover"
                             type="text"
                             // value={firstName}
                             placeholder={firstName}
@@ -29,7 +29,7 @@ export function ContanctUs() {
                             }}></input>
 
                         <input
-                            className="contact-input-small contact-input"
+                            className="contact-input-small border-hover"
                             // value={lastName}
                             placeholder={lastName}
                             onChange={(e) => {
@@ -40,7 +40,7 @@ export function ContanctUs() {
 
                 <label>Email</label>
                 <input
-                    className="contact-input-small contact-input"
+                    className="contact-input-small border-hover"
                     placeholder={email}
                     onChange={(e) => {
                         setEmail(e.target.value)
@@ -48,7 +48,7 @@ export function ContanctUs() {
 
                 <label>Phone Number</label>
                 <input
-                    className="contact-input-small contact-input"
+                    className="contact-input-small border-hover"
                     placeholder={phone}
                     onChange={(e) => {
                         setPhone(e.target.value)
@@ -56,14 +56,14 @@ export function ContanctUs() {
 
                 <label>Question or message</label>
                 <textarea
-                    className="contact-input-large contact-input"
+                    className="contact-input-large border-hover"
                     placeholder={message}
                     onChange={(e) => {
                         setMessage(e.target.value)
                     }}></textarea>
 
                 <button
-                    className="submit-button contact-input"
+                    className="submit-button border-hover"
                     onClick={() => sendMessage}>
                     Submit
                 </button>

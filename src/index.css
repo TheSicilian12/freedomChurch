@@ -78,6 +78,10 @@ code {
   border: 1px solid black;
 }
 
+.border-hover:hover {
+  border: 2px solid black;
+}
+
 .submit-button {
   width: 25%;
   height: 40px;
@@ -189,6 +193,9 @@ code {
   font-size: var(--smallFont);
   border: 1px solid black;
   border-radius: 5px;
+
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .contact-input-large {
@@ -199,16 +206,11 @@ code {
   border: 1px solid black;
   border-radius: 5px;
   font-size: var(--smallFont);
-}
 
-.contact-input {
   margin-top: 5px;
   margin-bottom: 20px;
 }
-.contact-input:hover {
-  border: 2px solid black;
-  padding: 9px;
-}
+
 /* -------------above-------------- Contact Us --------------above-------------------- */
 
 

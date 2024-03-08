@@ -1,3 +1,8 @@
+ # Important Considerations:
+ 1. Be mindful of what information is being displayed. Personal addresses and contact numbers should be kept out of public view.
+
+
+
 # Packages:
 react-slide-toggle
 https://www.npmjs.com/package/react-slide-toggle
