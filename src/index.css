@@ -39,6 +39,10 @@ code {
   justify-content: space-evenly;
 }
 
+.flex-between {
+  justify-content: space-between;
+}
+
 .xsmall-font {font-size: var(--xsmallFont);}
 .small-font {font-size: var(--smallFont)}
 .medium-font {font-size: var(--mediumFont)}
