@@ -17,7 +17,7 @@ export function Footer() {
 
                 <div>
                     <div className="medium-font">Location 2</div>
-                    <div>Address</div>
+                    <div className="small-font">Address</div>
                     <div className="small-font">Service Start Time</div>
                 </div>
             </div>
