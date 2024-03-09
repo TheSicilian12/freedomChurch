@@ -3,11 +3,15 @@ import { useState } from "react";
 export function MainMenu() {
 
     return (
-        <div className="pt-100">
+        <div className="pt-100 font-color-white">
 
             <div className="main-menu-grid border vw-70 vh-70 ml-10">
                 <div>
-                    About
+                    <div className="medium-font">About</div>
+                    <div>Mission and Vision</div>
+                    <div>Mission and Vision</div>
+                    <div>Mission and Vision</div>
+
                 </div>
 
                 <div>
