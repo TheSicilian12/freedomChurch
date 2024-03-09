@@ -10,15 +10,15 @@ export function Footer() {
                 </div>
             </div>
 
-            <div className="display-flex flex-even m-10 vw-50">
+            <div className="display-flex flex-even m-10">
 
-                <div className="display-flex-col">
+                <div className="display-flex-col vw-50 flex-hcenter flex-vcenter border">
                     <div className="medium-font">Location 2</div>
                     <div className="small-font">Address</div>
                     <div className="small-font">Service Start Time</div>
                 </div>
 
-                <div className="display-flex-col flex-vcenter">
+                <div className="display-flex-col vw-50 flex-hcenter flex-vcenter border">
                     <div className="medium-font">Ottawa, Ohio</div>
                     <div className="ml-10">
                         <div className="xsmall-font">133 N Court St</div>
