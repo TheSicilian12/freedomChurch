@@ -63,10 +63,13 @@ code {
 .vw-35 {width: 35vw;}
 .vw-40 {width: 40vw;}
 .vw-50 {width: 50vw;}
+.vw-70 {width: 70vw;}
 .vw-100 {width: 100vw;}
 
 .v100 {width: 100%;}
 
+.vh-50 {height: 50vh;}
+.vh-70 {height: 70vh;}
 .vh-100 {height: 100vh;}
 
 .m-10 {margin: 10px;}
@@ -328,6 +331,17 @@ code {
 /* -------------below-------------- Cover Screen --------------below-------------------- */
 
 /* -------------above-------------- Cover Screen --------------above-------------------- */
+
+
+/* -------------below-------------- Main Menu --------------below-------------------- */
+.main-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30%, 1fr));
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* -------------above-------------- Main Menu --------------above-------------------- */
 
 
 

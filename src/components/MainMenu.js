@@ -3,10 +3,33 @@ import { useState } from "react";
 export function MainMenu() {
 
     return (
-        <div className="">
+        <div className="pt-100">
 
-            <div className="pt-100">Hello</div>
+            <div className="main-menu-grid border vw-70 vh-70 ml-10">
+                <div>
+                    About
+                </div>
 
+                <div>
+                    Watch
+                </div>
+
+                <div>
+                    Get Involved
+                </div>
+
+                <div>
+                    Connect
+                </div>
+
+                <div>
+                    Ministries
+                </div>
+
+                <div>
+                    Resources
+                </div>
+            </div>
 
         </div>
     )
