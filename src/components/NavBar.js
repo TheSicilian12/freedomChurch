@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import churchLogo from '../images/ChurchLogo.svg'
 
-export function NavBar({mainDisplay, setMainDisplay}) {
+export function NavBar({ mainDisplay, setMainDisplay }) {
     const [display, setDisplay] = useState('display-none')
     const [location, setLocation] = useState('Choose Your Location')
     const [mainBackground, setMainBackground] = useState(true);
@@ -12,12 +12,12 @@ export function NavBar({mainDisplay, setMainDisplay}) {
     }
 
     const locationLeaveHover = () => {
-       setDisplay('display-none');
+        setDisplay('display-none');
     }
 
     const locationSelector = (e) => {
-       setLocation(e.target.textContent)
-       locationLeaveHover();
+        setLocation(e.target.textContent)
+        locationLeaveHover();
     }
 
     const coverSelector = (e) => {
@@ -35,11 +35,10 @@ export function NavBar({mainDisplay, setMainDisplay}) {
                 </div>
 
                 <div className="navbar-right">
-
-                    <div className="navbar-location-container large-font font-color-white"
+                    {mainDisplay && <div className="navbar-location-container large-font font-color-white"
                         onMouseEnter={locationHover}
                         onMouseLeave={locationLeaveHover}
-                        >{location}
+                    >{location}
 
                         <div className={`${display} navbar-locations-container`}>
                             <div className="navbar-location-options"
@@ -47,7 +46,7 @@ export function NavBar({mainDisplay, setMainDisplay}) {
                             <div className="navbar-location-options"
                                 onClick={locationSelector}>Church Name - Location 2</div>
                         </div>
-                    </div>
+                    </div>}
 
                     <div className="navbar-hamburger-container"
                         onClick={() => coverSelector()}>
