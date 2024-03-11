@@ -63,7 +63,7 @@ export function MainMenu() {
                 </div>
             </div>
 
-            <div className="border vw-20">
+            <div className="vw-20">
                 <Button text={'Hello'} radius={10}/>
             </div>
 
