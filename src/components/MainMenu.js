@@ -7,7 +7,7 @@ export function MainMenu() {
     return (
         <div className="pt-125 font-color-white display-flex">
 
-            <div className="main-menu-grid vw-70 vh-70 ml-50">
+            <div className="main-menu-grid vw-70 vh-70 ml-75">
                 <div className="">
                     <div className="large-font m-10">About</div>
                     <div className="cursor-pointer">
