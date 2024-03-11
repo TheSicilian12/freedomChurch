@@ -81,6 +81,8 @@ code {
 
 .mb-50 {margin-bottom: 50px;}
 
+
+
 .pt-100 {padding-top: 100px;}
 
 .below-navBar {
@@ -98,11 +100,17 @@ code {
   border: 1px solid white;
 }
 
+.underline {text-decoration: underline;}
+
+.underline-hover:hover {text-decoration: underline;}
+
 .border-white-tbr {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   border-right: 1px solid white;
 }
+
+.cursor-pointer {cursor: pointer}
 
 .submit-button {
   width: 25%;
