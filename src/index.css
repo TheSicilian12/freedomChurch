@@ -60,6 +60,7 @@ code {
 
 .bg-color-main {background-color: var(--mainColor);}
 
+.vw-20 {width: 20vw;}
 .vw-35 {width: 35vw;}
 .vw-40 {width: 40vw;}
 .vw-50 {width: 50vw;}
@@ -351,6 +352,14 @@ code {
 }
 
 /* -------------above-------------- Main Menu --------------above-------------------- */
+
+
+/* -------------below-------------- Button --------------below-------------------- */
+
+
+/* -------------above-------------- Button --------------above-------------------- */
+
+
 
 
 
