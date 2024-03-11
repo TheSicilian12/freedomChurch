@@ -5,7 +5,7 @@ import { Button } from "./Button.js"
 export function MainMenu() {
 
     return (
-        <div className="pt-100 font-color-white display-flex">
+        <div className="pt-125 font-color-white display-flex">
 
             <div className="main-menu-grid vw-70 vh-70 ml-50">
                 <div className="">
