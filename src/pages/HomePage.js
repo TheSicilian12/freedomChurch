@@ -22,7 +22,7 @@ export function HomePage() {
             {mainDisplay && <div className="homepage-container display-flex-col">
 
                 <div className="homepage-header"></div>
-
+                
                 <div className="homepage-first display-flex flex-even below-navBar">
                     <div className="homepage-welcome vw-40">
                         <GenInfo header="We Are Glad You're Here"

@@ -50,9 +50,13 @@ export function NavBar({ mainDisplay, setMainDisplay }) {
 
                     <div className="navbar-hamburger-container"
                         onClick={() => coverSelector()}>
+                        {mainDisplay && <>
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>
                         <div className="navbar-hamburger-line"></div>
+                        </>}
+
+                        {!mainDisplay && <div className="font-color-white">X</div>}
                     </div>
                 </div>
             </div>
