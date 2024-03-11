@@ -1,9 +1,8 @@
-export function Button({text, radius, mainColor, hoverColor}) {
+export function Button({text, buttonType}) {
 
     return (
         <div className="">
-
-            <button className="button-main-menu">{text}</button>
+            <button className={`${buttonType}`}>{text}</button>
         </div>
     )
 }

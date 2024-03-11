@@ -64,7 +64,10 @@ export function MainMenu() {
             </div>
 
             <div className="vw-20">
-                <Button text={'Hello'} radius={10}/>
+                <div className="mb-20"><Button text={'Hello'} buttonType={'button-main-menu'}/></div>
+                <div className="mb-20"><Button text={'Hello'} buttonType={'button-main-menu'}/></div>
+                <div className="mb-20"><Button text={'Hello'} buttonType={'button-main-menu'}/></div>
+                <div className="mb-20"><Button text={'Hello'} buttonType={'button-main-menu'}/></div>
             </div>
 
         </div>
