@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 import { NavBar } from '../components/NavBar';
 import { Footer } from '../components/Footer';
@@ -14,13 +15,22 @@ import { Login } from '../components/Login';
 import homePageImg from '../images/congregation.jpeg';
 
 export function HomePage() {
+    const navigate = useNavigate();
+
     const [mainDisplay, setMainDisplay] = useState(true);
     const [displayType, setDisplayType] = useState(MainMenu);
+
+    const handleRedirect = 'hello'
+
+    console.log(mainDisplay)
 
     return (
         <>
             <NavBar mainDisplay={mainDisplay} setMainDisplay={setMainDisplay} displayType={displayType} setDisplayType={setDisplayType} displayChange={MainMenu}/>
-            {!mainDisplay && <CoverScreen content={displayType}/>}
+            {/* {!mainDisplay && <CoverScreen content={displayType} navigation={navigate}/>} */}
+
+            {!mainDisplay && <MainMenu variable={'hello'}/>}
+
             {mainDisplay && <div className="homepage-container display-flex-col">
 
                 <div className="homepage-header"></div>
