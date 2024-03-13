@@ -4,7 +4,7 @@ import { Button } from "./Button.js"
 
 export function MainMenu({variable}) {
     console.log('main menu')
-    console.log(variable)
+    // console.log(variable)
 
     return (
         <div className="bg-color-main vw-100 vh-100 pt-125 font-color-white display-flex flex-between">

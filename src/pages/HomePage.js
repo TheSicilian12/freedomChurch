@@ -21,6 +21,7 @@ export function HomePage() {
     const [displayType, setDisplayType] = useState(MainMenu);
 
     const handleRedirect = 'hello'
+    const variable = 'hello'
 
     console.log(mainDisplay)
 
