@@ -1,8 +1,14 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Button } from "./Button.js"
 
 export function MainMenu() {
+    const navigate = useNavigate();
+
+    const redirectGive = () => {
+        navigate('/give')
+    }
 
     return (
         <div className="pt-125 font-color-white display-flex flex-between">
@@ -62,10 +68,12 @@ export function MainMenu() {
             </div>
 
             <div className="vw-20 mr-75">
-                <div className="mb-20"><Button text={'CONTACT US'} buttonType={'button-main-menu'}/></div>
-                <div className="mb-20"><Button text={'GET PRAYER'} buttonType={'button-main-menu'}/></div>
-                <div className="mb-20"><Button text={'GIVE ONLINE'} buttonType={'button-main-menu'}/></div>
-                <div className="mb-20"><Button text={'OUR LOCATION'} buttonType={'button-main-menu'}/></div>
+                <div className="mb-20"><Button text={'CONTACT US'} buttonType={'button-main-menu'} /></div>
+                <div className="mb-20"><Button text={'GET PRAYER'} buttonType={'button-main-menu'} /></div>
+                <div className="mb-20"><Button text={'GIVE ONLINE'}
+                    buttonType={'button-main-menu'}
+                    onClick={redirectGive}/></div>
+                <div className="mb-20"><Button text={'OUR LOCATION'} buttonType={'button-main-menu'} /></div>
             </div>
 
         </div>

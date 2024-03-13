@@ -1,7 +1,7 @@
 import { BrowserRouter, Router, Switch, Route, Routes } from 'react-router-dom';
 
 import { HomePage } from './pages/HomePage';
-import { NewPage } from './pages/NewPage';
+import { GivePage } from './pages/GivePage';
 
 import './App.css';
 
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/new" element={<NewPage />} />
+        <Route path="/give" element={<GivePage />} />
       </Routes>
     </BrowserRouter>
   );

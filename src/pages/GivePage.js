@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function NewPage() {
+export function GivePage() {
     return (
         <>
-            <div>New page</div>
+            <div>Give page</div>
         </>
     )
 }
