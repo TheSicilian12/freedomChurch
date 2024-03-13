@@ -9,20 +9,22 @@ import { Experience } from '../components/Experience';
 import { Visit } from '../components/Visit';
 import { CoverScreen } from '../components/CoverScreen';
 import { MainMenu } from '../components/MainMenu';
+import { Login } from '../components/Login';
 
 import homePageImg from '../images/congregation.jpeg';
 
 export function HomePage() {
     const [mainDisplay, setMainDisplay] = useState(true);
+    const [displayType, setDisplayType] = useState(MainMenu);
 
     return (
         <>
-            <NavBar mainDisplay={mainDisplay} setMainDisplay={setMainDisplay}/>
-            {!mainDisplay && <CoverScreen content={<MainMenu />}/>}
+            <NavBar mainDisplay={mainDisplay} setMainDisplay={setMainDisplay} displayType={displayType} setDisplayType={setDisplayType} displayChange={MainMenu}/>
+            {!mainDisplay && <CoverScreen content={displayType}/>}
             {mainDisplay && <div className="homepage-container display-flex-col">
 
                 <div className="homepage-header"></div>
-                
+
                 <div className="homepage-first display-flex flex-even below-navBar">
                     <div className="homepage-welcome vw-40">
                         <GenInfo header="We Are Glad You're Here"
@@ -45,7 +47,7 @@ export function HomePage() {
                 </div>
 
                 <div>
-                    <Footer />
+                    <Footer mainDisplay={mainDisplay} setMainDisplay={setMainDisplay} displayType={displayType} setDisplayType={setDisplayType} displayChange={Login}/>
                 </div>
             </div>}
         </>

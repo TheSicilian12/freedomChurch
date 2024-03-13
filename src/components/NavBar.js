@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import churchLogo from '../images/ChurchLogo.svg'
 
-export function NavBar({ mainDisplay, setMainDisplay }) {
+export function NavBar({ mainDisplay, setMainDisplay, displayType, setDisplayType, displayChange }) {
     const [display, setDisplay] = useState('display-none')
     const [location, setLocation] = useState('Choose Your Location')
     const [mainBackground, setMainBackground] = useState(true);
@@ -23,6 +23,7 @@ export function NavBar({ mainDisplay, setMainDisplay }) {
     const coverSelector = (e) => {
         setMainDisplay(!mainDisplay);
         setMainBackground(!mainBackground);
+        setDisplayType(displayChange);
     }
 
     return (

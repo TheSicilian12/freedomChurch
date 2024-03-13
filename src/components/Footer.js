@@ -1,4 +1,9 @@
-export function Footer() {
+export function Footer({ mainDisplay, setMainDisplay, displayType, setDisplayType, displayChange }) {
+
+    const login = () => {
+        setMainDisplay(!mainDisplay);
+        setDisplayType(displayChange);
+    }
 
     return (
         <div className="display-flex-col flex-vcenter bg-color-main font-color-white">
@@ -72,7 +77,7 @@ export function Footer() {
                     </div>
                 </div>
             </div>
-
+            <div onClick={login}>Sign in</div>
         </div>
     )
 }
