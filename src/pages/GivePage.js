@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { NavBar } from '../components/NavBar';
 import { GenInfo } from '../components/GenInfo';
 import { Button } from '../components/Button';
 
@@ -8,6 +9,7 @@ import titheImg from '../images/tithe.jpeg';
 export function GivePage() {
     return (
         <>
+        <NavBar />
             {/* <div>
                 <div>3 Simple and Safe Ways to Give</div>
                 <div>
@@ -37,7 +39,7 @@ export function GivePage() {
                     </div>
 
                     <img src={titheImg}
-                        className="vw-20 h-auto" />
+                        className="vw-35 h-auto" />
                 </div>
             </div>
         </>
