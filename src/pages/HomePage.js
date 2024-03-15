@@ -21,7 +21,7 @@ export function HomePage() {
 
     return (
         <>
-            <NavBar displayType={displayType} setDisplayType={setDisplayType} displayChange={MainMenu}/>
+            <NavBar />
 
             <div className="homepage-container display-flex-col">
 
