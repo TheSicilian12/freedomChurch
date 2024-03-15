@@ -379,6 +379,22 @@ code {
   background-color: white;
 }
 
+.button-give {
+  width: 100%;
+  height: 50px;
+  color: black;
+  font-size: var(--xsmallFont);
+  background-color: white;
+  border: 1px solid white;
+}
+.button-give:hover {
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-size: var(--xsmallFont);
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+}
 
 /* -------------above-------------- Button --------------above-------------------- */
 

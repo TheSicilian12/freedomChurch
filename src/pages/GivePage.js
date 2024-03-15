@@ -1,13 +1,14 @@
 import React from 'react';
 
 import { GenInfo } from '../components/GenInfo';
+import { Button } from '../components/Button';
 
 import titheImg from '../images/tithe.jpeg';
 
 export function GivePage() {
     return (
         <>
-            <div>
+            {/* <div>
                 <div>3 Simple and Safe Ways to Give</div>
                 <div>
                     <div>Give on Sunday</div>
@@ -21,7 +22,7 @@ export function GivePage() {
                     <div>Give by Mail</div>
                     <div>Please send your offering to any of our locations.</div>
                 </div>
-            </div>
+            </div> */}
 
             <div>
                 <div>
@@ -30,6 +31,7 @@ export function GivePage() {
                         headerSize="xlarge-font font-bold"
                         contentSize="small-font"
                     />
+                    <Button text="GIVE ONLINE" buttonType="button-give"/>
                 </div>
                 <img src={titheImg} />
             </div>
