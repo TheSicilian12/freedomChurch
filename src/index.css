@@ -230,7 +230,9 @@ code {
   border-bottom: 3px solid white;
 }
 
-
+.navbar-menu-item:hover {
+  color: var(--mainColor);
+}
 
 /* -------------above-------------- Navbar --------------above-------------------- */
 
