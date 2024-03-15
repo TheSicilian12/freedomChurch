@@ -230,8 +230,15 @@ code {
   border-bottom: 3px solid white;
 }
 
-.navbar-menu-item:hover {
+.navbar-menu-section:hover {
   color: var(--mainColor);
+}
+
+.navbar-menu-items {
+  display: none;
+}
+.navbar-menu-section:hover .navbar-menu-items {
+  display: block;
 }
 
 /* -------------above-------------- Navbar --------------above-------------------- */

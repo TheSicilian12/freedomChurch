@@ -89,11 +89,22 @@ export function NavBar() {
                 </div>
 
                 <div className="navbar-right">
-                    <div className="navbar-menu-item" onClick={() => pageRedirect('/')}>Home</div>
-                    <div className="navbar-menu-item" onClick={() => pageRedirect('/give')}>About</div>
-                    <div className="navbar-menu-item" onClick={() => pageRedirect('/give')}>Ministries</div>
-                    <div className="navbar-menu-item" onClick={() => pageRedirect('/give')}>Resources</div>
-                    <div className="navbar-menu-item" onClick={() => pageRedirect('/give')}>Give</div>
+                    <div className="navbar-menu-section" onClick={() => pageRedirect('/')}>Home</div>
+
+                    <div>
+                        <div className="navbar-menu-section" onClick={() => pageRedirect('/give')}>About</div>
+                        <div className="navbar-menu-items">
+                            <div>item</div>
+                            <div>item</div>
+                            <div>item</div>
+                            <div>item</div>
+                        </div>
+                    </div>
+
+
+                    <div className="navbar-menu-section" onClick={() => pageRedirect('/give')}>Ministries</div>
+                    <div className="navbar-menu-section" onClick={() => pageRedirect('/give')}>Resources</div>
+                    <div className="navbar-menu-section" onClick={() => pageRedirect('/give')}>Give</div>
                 </div>
             </div>
         </>
