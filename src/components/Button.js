@@ -1,9 +1,9 @@
-export function Button({text, buttonType}) {
+export function Button({text, buttonType, className}) {
 // ButtonTypes
     // 'button-main-menu'
-    
+
     return (
-        <div className="">
+        <div className={`${className}`}>
             <button className={`${buttonType}`}>{text}</button>
         </div>
     )
