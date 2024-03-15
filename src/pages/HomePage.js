@@ -17,8 +17,6 @@ import homePageImg from '../images/congregation.jpeg';
 export function HomePage() {
     const navigate = useNavigate();
 
-    const [displayType, setDisplayType] = useState(MainMenu);
-
     return (
         <>
             <NavBar />
@@ -49,7 +47,7 @@ export function HomePage() {
                 </div>
 
                 <div>
-                    {/* <Footer mainDisplay={mainDisplay} setMainDisplay={setMainDisplay} displayType={displayType} setDisplayType={setDisplayType} displayChange={Login}/> */}
+                    <Footer />
                 </div>
             </div>
         </>
