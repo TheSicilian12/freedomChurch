@@ -40,6 +40,7 @@ export function NavBar() {
     return (
         <>
             {!mainDisplay && <CoverScreen content={displayType} navigation={navigate}/>}
+            {/* {!mainDisplay && <MainMenu />} */}
             <div className={`navbar-container font-color-white ${mainBackground ? "bg-navbar-container" : ""}`}>
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
