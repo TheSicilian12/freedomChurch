@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 import churchLogo from '../images/ChurchLogo.svg'
 
 export function NavBar({ mainDisplay, setMainDisplay, displayType, setDisplayType, displayChange }) {
+    const navigate = useNavigate();
+
     const [display, setDisplay] = useState('display-none')
     const [location, setLocation] = useState('Choose Your Location')
     const [mainBackground, setMainBackground] = useState(true);
@@ -26,9 +29,13 @@ export function NavBar({ mainDisplay, setMainDisplay, displayType, setDisplayTyp
         setDisplayType(displayChange);
     }
 
+    const changePath = (path) => {
+        navigate(path)
+    }
+
     return (
         <>
-            <div className={`navbar-container ${mainBackground ? "bg-navbar-container" : ""}`}>
+            <div className={`navbar-container font-color-white ${mainBackground ? "bg-navbar-container" : ""}`}>
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
                         <img src={churchLogo} className="navbar-logo" />
@@ -48,7 +55,7 @@ export function NavBar({ mainDisplay, setMainDisplay, displayType, setDisplayTyp
                                 onClick={locationSelector}>Church Name - Location 2</div>
                         </div>
                     </div>}
-
+                    <div onClick={() => changePath('/give')}>New page</div>
                     <div className="navbar-hamburger-container"
                         onClick={() => coverSelector()}>
                         {mainDisplay && <>
