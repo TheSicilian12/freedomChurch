@@ -59,6 +59,10 @@ code {
 .font-color-second {color: var(--secondColor);}
 
 .bg-color-main {background-color: var(--mainColor);}
+.bg-color-black {background-color: black;}
+
+.w-auto {width: auto;}
+.h-auto {height: auto;}
 
 .vw-20 {width: 20vw;}
 .vw-35 {width: 35vw;}

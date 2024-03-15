@@ -24,16 +24,19 @@ export function GivePage() {
                 </div>
             </div> */}
 
-            <div>
-                <div>
+            <div className="border display-flex flex-hcenter bg-color-black font-color-white">
+                <div className="vw-50">
                     <GenInfo header="Give to Freedom Church"
                         content={`Thank you for your generosity and support. We use what God has given us to share the good news of Jesus Christ and to disciple believers.`}
                         headerSize="xlarge-font font-bold"
                         contentSize="small-font"
                     />
-                    <Button text="GIVE ONLINE" buttonType="button-give"/>
+                    <Button text="GIVE ONLINE" buttonType="button-give" />
                 </div>
-                <img src={titheImg} />
+
+                <img src={titheImg}
+                    className="vw-20 h-auto" />
+
             </div>
         </>
     )
