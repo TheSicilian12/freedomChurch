@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { GenInfo } from '../components/GenInfo';
+
+import titheImg from '../images/tithe.jpeg';
+
 export function GivePage() {
     return (
         <>
@@ -18,7 +22,17 @@ export function GivePage() {
                     <div>Please send your offering to any of our locations.</div>
                 </div>
             </div>
-            <div></div>
+
+            <div>
+                <div>
+                    <GenInfo header="Give to Freedom Church"
+                        content={`Thank you for your generosity and support. We use what God has given us to share the good news of Jesus Christ and to disciple believers.`}
+                        headerSize="xlarge-font font-bold"
+                        contentSize="small-font"
+                    />
+                </div>
+                <img src={titheImg} />
+            </div>
         </>
     )
 }
