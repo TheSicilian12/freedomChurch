@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import { redirect, useNavigate } from "react-router-dom";
+import { CoverScreen } from './CoverScreen';
 
 import churchLogo from '../images/ChurchLogo.svg'
 
-export function NavBar({ mainDisplay, setMainDisplay, displayType, setDisplayType, displayChange }) {
+export function NavBar({ displayType, setDisplayType, displayChange }) {
     const navigate = useNavigate();
 
     const [display, setDisplay] = useState('display-none')
     const [location, setLocation] = useState('Choose Your Location')
     const [mainBackground, setMainBackground] = useState(true);
+    const [mainDisplay, setMainDisplay] = useState(true);
 
     const locationHover = () => {
         display === 'display-none' ? setDisplay('display') : setDisplay('display-none');
@@ -35,6 +37,7 @@ export function NavBar({ mainDisplay, setMainDisplay, displayType, setDisplayTyp
 
     return (
         <>
+            {!mainDisplay && <CoverScreen content={displayType} navigation={navigate}/>}
             <div className={`navbar-container font-color-white ${mainBackground ? "bg-navbar-container" : ""}`}>
                 <div className="navbar-left">
                     <div className="navbar-logo-container">

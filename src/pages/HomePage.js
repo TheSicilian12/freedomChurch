@@ -17,19 +17,13 @@ import homePageImg from '../images/congregation.jpeg';
 export function HomePage() {
     const navigate = useNavigate();
 
-    const [mainDisplay, setMainDisplay] = useState(true);
     const [displayType, setDisplayType] = useState(MainMenu);
-
-    const handleRedirect = 'hello'
 
     return (
         <>
-            <NavBar mainDisplay={mainDisplay} setMainDisplay={setMainDisplay} displayType={displayType} setDisplayType={setDisplayType} displayChange={MainMenu}/>
-            {/* {!mainDisplay && <CoverScreen content={displayType} navigation={navigate}/>} */}
+            <NavBar displayType={displayType} setDisplayType={setDisplayType} displayChange={MainMenu}/>
 
-            {!mainDisplay && <MainMenu variable={'hello'}/>}
-
-            {mainDisplay && <div className="homepage-container display-flex-col">
+            <div className="homepage-container display-flex-col">
 
                 <div className="homepage-header"></div>
 
@@ -55,9 +49,9 @@ export function HomePage() {
                 </div>
 
                 <div>
-                    <Footer mainDisplay={mainDisplay} setMainDisplay={setMainDisplay} displayType={displayType} setDisplayType={setDisplayType} displayChange={Login}/>
+                    {/* <Footer mainDisplay={mainDisplay} setMainDisplay={setMainDisplay} displayType={displayType} setDisplayType={setDisplayType} displayChange={Login}/> */}
                 </div>
-            </div>}
+            </div>
         </>
     )
 }
