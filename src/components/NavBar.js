@@ -38,9 +38,47 @@ export function NavBar() {
     }
 
     return (
+        // <>
+        //     {!mainDisplay && <CoverScreen content={displayType} navigation={navigate}/>}
+        //     {/* {!mainDisplay && <MainMenu />} */}
+        //     <div className={`navbar-container font-color-white ${mainBackground ? "bg-navbar-container" : ""}`}>
+        //         <div className="navbar-left">
+        //             <div className="navbar-logo-container">
+        //                 <img src={churchLogo}
+        //                     className="navbar-logo"
+        //                     onClick={() => pageRedirect('/')} />
+        //             </div>
+        //         </div>
+
+        //         <div className="navbar-right">
+        //             {mainDisplay && <div className="navbar-location-container large-font font-color-white"
+        //                 onMouseEnter={locationHover}
+        //                 onMouseLeave={locationLeaveHover}
+        //             >{location}
+
+        //                 <div className={`${display} navbar-locations-container`}>
+        //                     <div className="navbar-location-options"
+        //                         onClick={locationSelector}>Church Name - Location 1</div>
+        //                     <div className="navbar-location-options"
+        //                         onClick={locationSelector}>Church Name - Location 2</div>
+        //                 </div>
+        //             </div>}
+        //             <div onClick={() => pageRedirect('/give')}>New page</div>
+        //             <div className="navbar-hamburger-container"
+        //                 onClick={() => coverSelector()}>
+        //                 {mainDisplay && <>
+        //                 <div className="navbar-hamburger-line"></div>
+        //                 <div className="navbar-hamburger-line"></div>
+        //                 <div className="navbar-hamburger-line"></div>
+        //                 </>}
+
+        //                 {!mainDisplay && <div className="font-color-white">X</div>}
+        //             </div>
+        //         </div>
+        //     </div>
+        // </>
+
         <>
-            {!mainDisplay && <CoverScreen content={displayType} navigation={navigate}/>}
-            {/* {!mainDisplay && <MainMenu />} */}
             <div className={`navbar-container font-color-white ${mainBackground ? "bg-navbar-container" : ""}`}>
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
@@ -51,29 +89,11 @@ export function NavBar() {
                 </div>
 
                 <div className="navbar-right">
-                    {mainDisplay && <div className="navbar-location-container large-font font-color-white"
-                        onMouseEnter={locationHover}
-                        onMouseLeave={locationLeaveHover}
-                    >{location}
-
-                        <div className={`${display} navbar-locations-container`}>
-                            <div className="navbar-location-options"
-                                onClick={locationSelector}>Church Name - Location 1</div>
-                            <div className="navbar-location-options"
-                                onClick={locationSelector}>Church Name - Location 2</div>
-                        </div>
-                    </div>}
-                    <div onClick={() => pageRedirect('/give')}>New page</div>
-                    <div className="navbar-hamburger-container"
-                        onClick={() => coverSelector()}>
-                        {mainDisplay && <>
-                        <div className="navbar-hamburger-line"></div>
-                        <div className="navbar-hamburger-line"></div>
-                        <div className="navbar-hamburger-line"></div>
-                        </>}
-
-                        {!mainDisplay && <div className="font-color-white">X</div>}
-                    </div>
+                    <div onClick={() => pageRedirect('/')}>Home</div>
+                    <div onClick={() => pageRedirect('/give')}>About</div>
+                    <div onClick={() => pageRedirect('/give')}>Ministries</div>
+                    <div onClick={() => pageRedirect('/give')}>Resources</div>
+                    <div onClick={() => pageRedirect('/give')}>Give</div>
                 </div>
             </div>
         </>
