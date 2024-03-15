@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { redirect, useNavigate } from "react-router-dom";
 
 import churchLogo from '../images/ChurchLogo.svg'
 
@@ -29,7 +29,7 @@ export function NavBar({ mainDisplay, setMainDisplay, displayType, setDisplayTyp
         setDisplayType(displayChange);
     }
 
-    const changePath = (path) => {
+    const pageRedirect = (path) => {
         navigate(path)
     }
 
@@ -38,7 +38,9 @@ export function NavBar({ mainDisplay, setMainDisplay, displayType, setDisplayTyp
             <div className={`navbar-container font-color-white ${mainBackground ? "bg-navbar-container" : ""}`}>
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
-                        <img src={churchLogo} className="navbar-logo" />
+                        <img src={churchLogo}
+                            className="navbar-logo"
+                            onClick={() => pageRedirect('/')} />
                     </div>
                 </div>
 
@@ -55,7 +57,7 @@ export function NavBar({ mainDisplay, setMainDisplay, displayType, setDisplayTyp
                                 onClick={locationSelector}>Church Name - Location 2</div>
                         </div>
                     </div>}
-                    <div onClick={() => changePath('/give')}>New page</div>
+                    <div onClick={() => pageRedirect('/give')}>New page</div>
                     <div className="navbar-hamburger-container"
                         onClick={() => coverSelector()}>
                         {mainDisplay && <>
