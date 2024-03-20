@@ -234,12 +234,6 @@ code {
   color: var(--mainColor);
 }
 
-.navbar-menu-items {
-  display: none;
-}
-.navbar-menu-section:hover .navbar-menu-items {
-  display: block;
-}
 
 /* -------------above-------------- Navbar --------------above-------------------- */
 
